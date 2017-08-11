@@ -11,7 +11,7 @@ body {
 	background-color: $OFF-WHITE;
 	font-family: 'Saira', sans-serif;
 }
-div.header {
+div.QuizProgressHeader {
 	padding: 1em 1.5em 0em 1.5em;
 	display: flex;
 	background-color: $YELLOW;
@@ -35,15 +35,19 @@ div.header {
 
 img.menu-icon {
 	max-width: 35px;
-	// border: 2px dashed yellow;
+	/* display: none;
+	// @include responsive(xs) {
+	// 	display: inline-block;
+	// }
+	*/
 }
-
 div.displayQuestion {
 	// background-color: $OFF-WHITE;
 	// background-color: $NAVY_BLUE;
 	// background-color: #514f87;
 	// color: $NAVY_BLUE;
 	// min-height: 15vh;
+	margin-top: 2em;
 	text-align: center;
 	h3.question-text {
 	}
@@ -85,3 +89,8 @@ color: blue;
 }
 }
 */
+
+// ========= helpers! =======
+.hidden {
+	display: none;
+}
