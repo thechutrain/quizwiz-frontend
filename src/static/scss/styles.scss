@@ -1,0 +1,20 @@
+@import "./reset/basic-reset";
+
+// ======= COLORS ========
+$primary-color: blue;
+$secondary-color: grey;
+$ternary-color: yellow;
+$red: red;
+
+body {
+	background: $secondary-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+p {
+	color: $red;
+}
