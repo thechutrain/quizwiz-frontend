@@ -1,11 +1,75 @@
-@import "./reset/basic-reset";
+@import "./partials/normalize.scss";
+/* @import "./partials/reset.scss";*/
+@import "./partials/variables.scss";
+@import "./partials/mixins.scss";
+/* @import "./partials/borders.scss"; */
+@import url('https://fonts.googleapis.com/css?family=Saira');
 
-// ======= COLORS ========
-$primary-color: blue;
-$secondary-color: grey;
-$ternary-color: yellow;
-$red: red;
+body {
+	// background-image: linear-gradient(to right, #514f87);
+	// background-image: linear-gradient(to right, $YELLOW);
+	background-color: $OFF-WHITE;
+	font-family: 'Saira', sans-serif;
+}
+div.header {
+	padding: 1em 1.5em 0em 1.5em;
+	display: flex;
+	background-color: $YELLOW;
+	border-bottom: 2px solid $NAVY_BLUE;
+	// background-color: #514f87;
+	// color: $NAVY_BLUE;
+	// background-color: $NAVY_BLUE;
+	div.header__unit {
+		flex: 1;
+		&.align-center {
+			text-align: center;
+		}
+		&.align-left {
+			text-align: left;
+		}
+		&.align-right {
+			text-align: right;
+		}
+	}
+}
 
+img.menu-icon {
+	max-width: 35px;
+	// border: 2px dashed yellow;
+}
+
+div.displayQuestion {
+	// background-color: $OFF-WHITE;
+	// background-color: $NAVY_BLUE;
+	// background-color: #514f87;
+	// color: $NAVY_BLUE;
+	// min-height: 15vh;
+	text-align: center;
+	h3.question-text {
+	}
+}
+
+div.displayChoices {
+	ul.choices-list {
+		list-style: none;
+		padding: 0em 2em;
+		li.choice-item {
+			// border: 1px solid $ORANGE;
+			border-radius: 0.5em;
+			text-align: center;
+			padding: 1em;
+			margin-bottom: 0.5em;
+			// background-color: $ORANGE;
+			background-color: $DARKER_BLUE;
+			&:hover {
+				background-color: $PURPLE;
+				color: $OFF-WHITE;
+				cursor: pointer;
+			}
+		}
+	}
+}
+/*
 body {
 	background: $secondary-color;
 	display: flex;
@@ -14,7 +78,10 @@ body {
 	flex-direction: column;
 	height: 100vh;
 }
-
 p {
-	color: $red;
+color: $red;
+@include responsive(sm) {
+color: blue;
 }
+}
+*/

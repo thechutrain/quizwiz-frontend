@@ -1,0 +1,24 @@
+body {
+	border: 1px solid black;
+}
+header {
+	border: 2px dashed pink;
+	margin-bottom: 1em;
+}
+
+div.header {
+	border: 2px dashed pink;
+	margin-bottom: 2em;
+	// div.header__unit {
+	// 	// border: 0.5px solid red;
+	// }
+}
+
+div.displayQuestion {
+	border: 2px dashed pink;
+	margin-bottom: 1em;
+}
+
+div.displayChoices {
+	border: 2px dashed pink;
+}
