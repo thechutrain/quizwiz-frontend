@@ -1,0 +1,33 @@
+// ======= STYLING FOR QUESTION DISPLAY ==========
+div.displayQuestion {
+	// background-color: $OFF-WHITE;
+	// background-color: $NAVY_BLUE;
+	// background-color: #514f87;
+	// color: $NAVY_BLUE;
+	// min-height: 15vh;
+	margin-top: 2em;
+	text-align: center;
+	h3.question-text {
+	}
+}
+
+div.displayChoices {
+	ul.choices-list {
+		list-style: none;
+		padding: 0em 2em;
+		li.choice-item {
+			// border: 1px solid $ORANGE;
+			border-radius: 0.5em;
+			text-align: center;
+			padding: 1em;
+			margin-bottom: 0.5em;
+			// background-color: $ORANGE;
+			background-color: $DARKER_BLUE;
+			&:hover {
+				background-color: $PURPLE;
+				color: $OFF-WHITE;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -5,148 +5,15 @@
 /* @import "./partials/borders.scss"; */
 @import url('https://fonts.googleapis.com/css?family=Saira');
 
+@import "./pageStyling/fullScreenMenu";
+@import "./pageStyling/quizProgressBar";
+@import "./pageStyling/questionDisplay";
+@import "./pageStyling/loginPage";
+@import "./pageStyling/createQuizPage";
+
 body {
 	// background-image: linear-gradient(to right, #514f87);
 	// background-image: linear-gradient(to right, $YELLOW);
 	background-color: $OFF-WHITE;
 	font-family: 'Saira', sans-serif;
-}
-
-// ======= STYLING FOR MENU BAR TOP HEADER ==========
-div.QuizProgressHeader {
-	padding: 1em 1.5em 0em 1.5em;
-	display: flex;
-	background-color: $YELLOW;
-	border-bottom: 2px solid $NAVY_BLUE;
-	z-index: 0;
-	// background-color: #514f87;
-	// color: $NAVY_BLUE;
-	// background-color: $NAVY_BLUE;
-	div.header__unit {
-		flex: 1;
-		&.align-center {
-			text-align: center;
-		}
-		&.align-left {
-			text-align: left;
-		}
-		&.align-right {
-			text-align: right;
-		}
-	}
-}
-
-img.menu-icon {
-	max-width: 35px;
-	&:hover {
-		cursor: pointer;
-	}
-	/* display: none;
-	// @include responsive(xs) {
-	// 	display: inline-block;
-	// }
-	*/
-}
-
-// ======= STYLING FOR QUESTION DISPLAY ==========
-div.displayQuestion {
-	// background-color: $OFF-WHITE;
-	// background-color: $NAVY_BLUE;
-	// background-color: #514f87;
-	// color: $NAVY_BLUE;
-	// min-height: 15vh;
-	margin-top: 2em;
-	text-align: center;
-	h3.question-text {
-	}
-}
-
-div.displayChoices {
-	ul.choices-list {
-		list-style: none;
-		padding: 0em 2em;
-		li.choice-item {
-			// border: 1px solid $ORANGE;
-			border-radius: 0.5em;
-			text-align: center;
-			padding: 1em;
-			margin-bottom: 0.5em;
-			// background-color: $ORANGE;
-			background-color: $DARKER_BLUE;
-			&:hover {
-				background-color: $PURPLE;
-				color: $OFF-WHITE;
-				cursor: pointer;
-			}
-		}
-	}
-}
-
-// ======= STYLING FOR FULL SCREEN MENU ==========
-div.fullScreenMenuContainer {
-	// border: 2px pink dashed;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: 29;
-	opacity: 1;
-	// transition: opacity z-index 1s linear;
-	transition: opacity 0.3s ease-in-out;
-	// transition: opacity 0.2s ease-out 0.5s ease-in;
-	transition: z-index 15s ease-out 0.5s ease-in;
-	&.hidden {
-		opacity: 0;
-		z-index: -33;
-		// transition: opacity 2.25s ease-in-out;
-	}
-	div.backgroundScreen {
-		// border: 1px dashed green;
-		z-index: 50;
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		bottom: 0;
-		background-color: black;
-		opacity: 0.85;
-	}
-	div.fullScreenMenu {
-		border: 2px yellow solid;
-		border-radius: 0.5em;
-		z-index: 99;
-		width: 80%;
-		height: 80%;
-		background-color: black;
-		text-align: center;
-		div.menu-header {
-			// border: 1px pink solid;
-			position: relative;
-			height: 50px;
-			padding: 1em 2em;
-		}
-		img.x-icon {
-			width: 50px;
-			height: 50px;
-			float: right;
-			// border: 1px dashed pink;
-			&:hover {
-				cursor: pointer;
-			}
-		}
-		color: white;
-		ul {
-			list-style: none;
-			padding: 0;
-			li {
-				padding: 1em;
-			}
-			li a {
-				color: white;
-				text-decoration: none;
-			}
-		}
-	}
 }

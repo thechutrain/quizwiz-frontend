@@ -1,0 +1,36 @@
+// ======= STYLING FOR MENU BAR TOP HEADER ==========
+div.QuizProgressHeader {
+	padding: 1em 1.5em 0em 1.5em;
+	display: flex;
+	background-color: $YELLOW;
+	// background-color: #514f87;
+	border-bottom: 2px solid $NAVY_BLUE;
+	z-index: 0;
+	// background-color: #514f87;
+	// color: $NAVY_BLUE;
+	// background-color: $NAVY_BLUE;
+	div.header__unit {
+		flex: 1;
+		&.align-center {
+			text-align: center;
+		}
+		&.align-left {
+			text-align: left;
+		}
+		&.align-right {
+			text-align: right;
+		}
+	}
+}
+
+img.menu-icon {
+	max-width: 35px;
+	&:hover {
+		cursor: pointer;
+	}
+	/* display: none;
+	// @include responsive(xs) {
+	// 	display: inline-block;
+	// }
+	*/
+}
