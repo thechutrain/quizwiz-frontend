@@ -5,12 +5,12 @@
 var colors = require('colors')
 var StaticServer = require('static-server')
 
-const PORT = 3000
+const PORT = 4000
 var server = new StaticServer({
 	rootPath: './.development/',
 	port: PORT
 })
 
-server.start(function () {
+server.start(function() {
 	console.log(colors.red.underline(`Server started on port: ${PORT}`))
 })
