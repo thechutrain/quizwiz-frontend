@@ -62,6 +62,11 @@ div.fullScreenMenuContainer {
 			li a {
 				color: white;
 				text-decoration: none;
+				padding: 1em;
+				&:hover {
+					border: 2px solid white;
+					border-radius: 0.5em;
+				}
 			}
 		}
 	}
